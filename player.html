@@ -1,0 +1,32 @@
+<html>
+
+<head>
+    <title>Flowplayer com RTMP CloudFront</title>
+    <meta name="description" content="Exemplo do Flowplayer integrado com CloudFront em RTMP" />
+    <meta name="author" content="contato@fabio-fernandes.com | www.fabio-fernandes.com" />
+</head>
+
+<body>
+    <script type="text/javascript" src="js/flowplayer-3.2.13.min.js"></script>
+
+    <div id="video" style="width: 550px; height: 300px;"></div>
+
+    <script type="text/javascript">
+        flowplayer("video", "swf/flowplayer-3.2.18.swf", {
+            clip: {
+                url: "mp4:cti-cursos",
+                autoPlay: true,
+                autoBuffering: false,
+                provider: 'rtmp',
+            },
+            plugins: {
+                rtmp: {
+                    url: "flowplayer.rtmp-3.2.13.swf",
+                    netConnectionUrl: 'rtmp://s2xqza2ehda8to.cloudfront.net/cfx/st'
+                }
+            }
+        });
+    </script>
+</body>
+
+</html>
