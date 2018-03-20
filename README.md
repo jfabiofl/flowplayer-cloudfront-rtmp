@@ -1,2 +1,4 @@
 # Flowplayer com RTMP CloudFront
-Exemplo do Flowplayer integrado com CloudFront em RTMP
+Flowplayer integrado com CloudFront em RTMP
+
+Demo - https://jfabiofl.github.io/flowplayer-cloudfront-rtmp/player.html
